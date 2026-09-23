@@ -4,18 +4,33 @@
     {
         static void Main(string[] args)
         {
-            int x = 5;
-            Add(3, 4, out x);
-            Add(3, 4);
-            Add("hello", "world");
 
-            Add(4, 5);
+            BaseClass objBase;
+            objBase = new BaseClass();
+            objBase.Show();
 
-            Add(3, 4);
+            //DerivedClass objDerived = new DerivedClass();
+            //objDerived.Show();
 
-            int[] a = { 3, 4, 5 };
-            PrintArray(a);
-            //PrintArray(2, 3, 4, 5, 6);
+            objBase = new DerivedClass();
+            objBase.Show();
+
+            //objDerived = new BaseClass();
+
+
+
+            //int x = 5;
+            //Add(3, 4, out x);
+            //Add(3, 4);
+            //Add("hello", "world");
+
+            //Add(4, 5);
+
+            //Add(3, 4);
+
+            //int[] a = { 3, 4, 5 };
+            //PrintArray(a);
+            ////PrintArray(2, 3, 4, 5, 6);
         }
 
         static void PrintArray(int[] arr)
