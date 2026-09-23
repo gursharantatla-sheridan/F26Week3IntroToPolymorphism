@@ -22,5 +22,10 @@ namespace PolymorphismExercise
             else
                 return (40 * Wage) + (Hours - 40) * Wage * 1.5;
         }
+
+        public override string ToString()
+        {
+            return base.ToString() + $"\nHours = {Hours}\nWage = {Wage:C}";
+        }
     }
 }
